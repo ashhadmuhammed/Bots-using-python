@@ -115,32 +115,6 @@ async def callback_query_handler(event):
         global LOCK
         LOCK = 0
 
-
-
-
-        # await client.send_message(event.chat_id, "Enter your NAME,KTU REGISTER NO,QUERY in line by line")
-        #
-        # @client.on(events.NewMessage())
-        # async def enquiry_handler(event):
-        #
-        #     enquiry_data = event.message.message.split()
-        #     global enqno
-        #     enqno += 1
-        #     path = (r"C:\Users\MCA\Desktop\Enquiries")
-        #     path += "\\" + "enq" + str(enqno) + ".txt"
-        #
-        #     f = open(path, 'w')
-        #     for i in enquiry_data:
-        #
-        #         f.write(str(i)+'\n')
-        #     f.close()
-        #     await event.reply("Query sent..")
-
-
-
-
-
-
     elif event.data == b"s1":
 
         await client.send_message(event.chat_id, "Here are the subjcts:", buttons=keyboard11)
